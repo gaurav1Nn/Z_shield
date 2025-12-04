@@ -12,8 +12,8 @@ const footerLinks = {
     { label: "Analytics", href: "/analytics" },
   ],
   resources: [
-    { label: "Documentation", href: "#", external: true },
-    { label: "GitHub", href: "#", external: true },
+    { label: "Zcash Docs", href: "https://zcash.readthedocs.io/en/latest/", external: true },
+    { label: "GitHub", href: "https://github.com/gaurav1Nn/Z_shield", external: true },
     { label: "Blog", href: "#", external: true },
     { label: "FAQ", href: "#" },
   ],
