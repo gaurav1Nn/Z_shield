@@ -1,7 +1,5 @@
 # 🛡️ ZShield - Privacy-First DeFi Swap Platform
 
-<div align="center">
-
 ![ZShield Banner](https://img.shields.io/badge/ZShield-Privacy%20First-orange?style=for-the-badge&logo=shield)
 
 **The most private way to swap crypto assets using Zcash's shielded transactions.**
@@ -11,9 +9,9 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-[Demo](#demo) • [Features](#features) • [Installation](#installation) • [API](#api-documentation) • [Tech Stack](#tech-stack)
+**🌐 Live Demo:** [https://z-shield-kyis.vercel.app/](https://z-shield-kyis.vercel.app/)
 
-</div>
+[Features](#features) • [Installation](#installation) • [API](#api-documentation) • [Tech Stack](#tech-stack) • [Contributing](#contributing)
 
 ---
 
@@ -24,6 +22,8 @@ ZShield is a cutting-edge decentralized exchange (DEX) interface that leverages 
 - 🔒 **Hidden Sender** - Your identity stays anonymous
 - 🔒 **Hidden Receiver** - Recipient addresses are encrypted
 - 🔒 **Hidden Amount** - Transaction values are completely private
+
+**👉 Try it now:** [https://z-shield-kyis.vercel.app/](https://z-shield-kyis.vercel.app/)
 
 ## ✨ Features
 
@@ -55,6 +55,8 @@ ZShield is a cutting-edge decentralized exchange (DEX) interface that leverages 
 
 ## 🚀 Demo
 
+**🌐 Live Application:** [https://z-shield-kyis.vercel.app/](https://z-shield-kyis.vercel.app/)
+
 ### Live Features
 1. **Connect Wallet** - Click the connect button to simulate wallet connection
 2. **Perform Swap** - Enter amount and click "Swap Privately"
@@ -66,7 +68,7 @@ ZShield is a cutting-edge decentralized exchange (DEX) interface that leverages 
 ## 🛠️ Installation
 
 ### Prerequisites
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ### Quick Start
@@ -98,50 +100,50 @@ npm start
 
 ```
 v1/
-├── app/                      # Next.js App Router pages
-│   ├── api/                  # Backend API routes
-│   │   ├── auth/            # Authentication endpoints
-│   │   ├── swap/            # Swap endpoints (quote, execute, history)
-│   │   ├── wallet/          # Wallet validation endpoints
-│   │   ├── price/           # Token price endpoints
-│   │   └── stats/           # Platform statistics
-│   ├── analytics/           # Analytics page
-│   ├── orders/              # Orders/History page
-│   ├── pool/                # Pool management page
-│   └── page.tsx             # Home page with swap interface
+├── app/                    # Next.js App Router pages
+│   ├── api/               # Backend API routes
+│   │   ├── auth/          # Authentication endpoints
+│   │   ├── swap/          # Swap endpoints (quote, execute, history)
+│   │   ├── wallet/        # Wallet validation endpoints
+│   │   ├── price/         # Token price endpoints
+│   │   └── stats/         # Platform statistics
+│   ├── analytics/         # Analytics page
+│   ├── orders/            # Orders/History page
+│   ├── pool/              # Pool management page
+│   └── page.tsx           # Home page with swap interface
 │
-├── components/               # React components
-│   ├── animations/          # Advanced animation components
+├── components/            # React components
+│   ├── animations/        # Advanced animation components
 │   │   ├── 3d-background.tsx
 │   │   ├── holographic-card.tsx
 │   │   ├── liquid-button.tsx
 │   │   ├── mesh-gradient.tsx
 │   │   └── ...
-│   ├── providers/           # Context providers
+│   ├── providers/         # Context providers
 │   │   └── wallet-provider.tsx
-│   ├── ui/                  # shadcn/ui components
+│   ├── ui/                # shadcn/ui components
 │   ├── navbar.tsx
 │   ├── footer.tsx
 │   ├── swap-card.tsx
 │   └── ...
 │
-├── lib/                     # Backend logic
-│   ├── data/               # Mock database
-│   ├── errors/             # Custom error classes
-│   ├── middleware/         # API middleware (auth, rate-limit)
-│   ├── providers/          # External integrations (Zcash, SideShift)
-│   ├── repositories/       # Data access layer
-│   ├── services/           # Business logic
-│   ├── types/              # TypeScript definitions
-│   ├── utils/              # Utilities (logger, response helpers)
-│   └── validators/         # Zod validation schemas
+├── lib/                   # Backend logic
+│   ├── data/              # Mock database
+│   ├── errors/            # Custom error classes
+│   ├── middleware/        # API middleware (auth, rate-limit)
+│   ├── providers/         # External integrations (Zcash, SideShift)
+│   ├── repositories/      # Data access layer
+│   ├── services/          # Business logic
+│   ├── types/             # TypeScript definitions
+│   ├── utils/             # Utilities (logger, response helpers)
+│   └── validators/        # Zod validation schemas
 │
-├── hooks/                   # Custom React hooks
+├── hooks/                 # Custom React hooks
 │   ├── use-gsap.ts
 │   ├── use-wallet.ts
 │   └── ...
 │
-└── public/                  # Static assets
+└── public/                # Static assets
 ```
 
 ---
@@ -206,7 +208,7 @@ Execute a swap (requires auth).
 
 ```json
 // Headers
-Authorization: Bearer <sessionId>
+Authorization: Bearer <session-id>
 
 // Request
 {
@@ -235,6 +237,7 @@ Get platform statistics.
 ## 🎨 Tech Stack
 
 ### Frontend
+
 | Technology | Purpose |
 |------------|---------|
 | **Next.js 16** | React framework with App Router |
@@ -246,6 +249,7 @@ Get platform statistics.
 | **Lucide React** | Icon library |
 
 ### Backend
+
 | Technology | Purpose |
 |------------|---------|
 | **Next.js API Routes** | Serverless API |
@@ -254,6 +258,7 @@ Get platform statistics.
 | **In-Memory DB** | Mock data storage |
 
 ### Animation Libraries
+
 | Library | Use Case |
 |---------|----------|
 | **GSAP + ScrollTrigger** | Scroll animations |
@@ -333,10 +338,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-<div align="center">
-
 **Built with ❤️ for the privacy-conscious DeFi community**
 
-[⬆ Back to Top](#-zshield---privacy-first-defi-swap-platform)
+**🌐 Try ZShield:** [https://z-shield-kyis.vercel.app/](https://z-shield-kyis.vercel.app/)
 
-</div>
+[⬆ Back to Top](#-zshield---privacy-first-defi-swap-platform)
